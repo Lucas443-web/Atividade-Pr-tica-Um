@@ -1,0 +1,32 @@
+package Exercicios;
+
+import java.util.Scanner;
+
+public class ExercicioTres {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		float salariobruto; 
+		float adnt; // Adicional noturno
+		float he; // Valor por hora extra
+		float dt; // Desconto
+		float salarioliquido;
+		
+		System.out.println("Digite o seu salário bruto: ");
+		salariobruto = scanner.nextFloat();
+		System.out.println("Digite o seu adicional noturno: ");
+		adnt = scanner.nextFloat();
+		System.out.println("Digite quanto você ganha por hora extra: ");
+		he = scanner.nextFloat();
+		System.out.println("Digite o seu desconto: ");
+		dt = scanner.nextFloat();
+		
+		salarioliquido = (salariobruto + adnt + (he * 5))- dt;
+		System.out.println("O seu salário líquido é " + salarioliquido);
+		
+
+	}
+
+}

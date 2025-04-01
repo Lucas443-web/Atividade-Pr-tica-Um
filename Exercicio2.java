@@ -1,0 +1,32 @@
+package Exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		float n1 = 0;
+		float n2 = 0;
+		float n3 = 0;
+		float n4 = 0;
+		
+		System.out.println("Digite a nota 1 : ");
+		n1 = scanner.nextFloat();
+		
+		System.out.println("Digite a nota 2 : ");
+		n2 = scanner.nextFloat();
+		
+		System.out.println("Digite a nota 3 : ");
+		n3 = scanner.nextFloat();
+		
+		System.out.println("Digite a nota 4 : ");
+		n4 = scanner.nextFloat();
+		
+		float media = (n1 + n2 + n3 + n4) / 4;
+		System.out.println("A sua média final é " + media);
+		
+	}
+
+}
